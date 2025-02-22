@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 400px;
+    text-align: center;
+    animation: glow 2s infinite alternate;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.generate-btn, .copy-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0ff;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    transition: background 0.3s ease;
+}
+
+.generate-btn:hover, .copy-btn:hover {
+    background: #00f;
+}
+
+.password-output {
+    margin-top: 20px;
+}
+
+.password-output input {
+    width: calc(100% - 70px);
+    margin-right: 10px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+    }
+}
